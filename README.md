@@ -1,3 +1,4 @@
 Both Scripts are required on one Object.
 Here is a demonstration with simple cooking assets on unity.
-https://github.com/user-attachments/assets/b19217a9-67a8-4b59-b1fb-e629843bdf43
+
+![Rotation Demonstration GiF](https://github.com/user-attachments/assets/66be235d-6933-4a2a-b55c-f1694db56faf)
