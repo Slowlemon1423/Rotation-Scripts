@@ -7,9 +7,9 @@ using UnityEngine;
 public class Rotatemanager : MonoBehaviour
 {
     [Header("Assign")]
-    public float openr;
-    public float closer;
-    public GameObject attached;
+    public float openr;//The angle when open.
+    public float closer;//The angle when closed.
+    public GameObject attached;//This is the object you want to rotate. For simple applications, Attach the object this script is attached to
     [Header("States")]
     public bool open = false;
     public bool interactable; //Can you do anything besides opening and closing it/does left click have any effect
