@@ -18,14 +18,10 @@ public class RotateOpen : MonoBehaviour
     float r;
     public bool error=false;
     public bool Open = false;
-    //public bool MultiAxisRotation;
+    public bool MultiAxisRotation=false; // Change to true if you want multi Axis rotation. (Optional)
     public float oldTarg;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -33,7 +29,7 @@ public class RotateOpen : MonoBehaviour
 
         if (!error)
         {
-            if ((x ^ y ? z : x)/*&&!MultiAxisRotation*/)
+            if ((x ^ y ? z : x)&&!MultiAxisRotation)
                 //If x and y same: (xor returns false) return x because
                 //If x is 1, y is also 1, mutliple axis
                 //If x is 0 then y is also 0 and z is one.
@@ -41,6 +37,7 @@ public class RotateOpen : MonoBehaviour
                 //one of them is 1 and one of them is 0.
                 //if z is one, then multiple axis.
                 //if z is 0 then perfectly normal.
+                // If MultiAxisRotation is enabled, The error if statement is blocked
             {
                 error = true;
                 Debug.Log("Multiple Axis Detected");
